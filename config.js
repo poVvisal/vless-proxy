@@ -16,7 +16,7 @@ export const CONFIG = {
   HOST: '0.0.0.0',
   
   // VPS details
-  VPS_IP: '152.42.239.18',
+  VPS_IP: '159.65.10.18',
   DOMAIN: 'khmlbb.kingczin.me',
   
   // Logging

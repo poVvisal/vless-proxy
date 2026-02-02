@@ -4,7 +4,7 @@ A lightweight VLESS WebSocket proxy server designed to run on Ubuntu VPS.
 
 ## Server Configuration
 
-- **VPS IP**: 152.42.239.18
+- **VPS IP**: 159.65.10.18
 - **Domain**: khmlbb.kingczin.me
 - **UUID**: 8cd43dab-a5ae-4634-b9b1-3efa38615e0d
 - **WebSocket Path**: /vless/
@@ -26,10 +26,10 @@ A lightweight VLESS WebSocket proxy server designed to run on Ubuntu VPS.
 
 ```bash
 # Upload all files to your VPS
-scp -r * root@152.42.239.18:/root/vless-proxy/
+scp -r * root@159.65.10.18:/root/vless-proxy/
 
 # SSH into your VPS
-ssh root@152.42.239.18
+ssh root@159.65.10.18
 
 # Navigate to directory
 cd /root/vless-proxy
@@ -87,7 +87,7 @@ sudo journalctl -u vless-proxy -f
 
 ```bash
 # Test HTTP endpoint (should show fake nginx page)
-curl http://152.42.239.18
+curl http://159.65.10.18
 
 # Check if server is listening
 netstat -tulpn | grep :80
@@ -99,7 +99,7 @@ Configure your VLESS client with these settings:
 
 ```
 Protocol: VLESS
-Address: khmlbb.kingczin.me (or 152.42.239.18)
+Address: khmlbb.kingczin.me (or 159.65.10.18)
 Port: 80
 UUID: 8cd43dab-a5ae-4634-b9b1-3efa38615e0d
 Transport: WebSocket
