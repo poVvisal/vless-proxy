@@ -1,7 +1,7 @@
 [Unit]
 Description=VLESS WebSocket Proxy Server
 After=network.target
-Documentation=https://github.com/yourusername/vless-proxy
+Documentation=https://github.com/poVvisal/vless-proxy
 
 [Service]
 Type=simple

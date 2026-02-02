@@ -6,7 +6,7 @@
 
 export const CONFIG = {
   // VLESS UUID for authentication
-  UUID: '8cd43dab-a5ae-4634-b9b1-3efa38615e0d',
+  UUID: '8cd43dab-a5ae-4634-b9b1-726a262f-25f6-4280-8c7b-97d67b3e1298',
   
   // WebSocket configuration
   WEBSOCKET_PATH: '/vless/',
