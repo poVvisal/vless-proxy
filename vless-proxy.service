@@ -1,0 +1,30 @@
+[Unit]
+Description=VLESS WebSocket Proxy Server
+After=network.target
+Documentation=https://github.com/yourusername/vless-proxy
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/vless-proxy
+ExecStart=/usr/bin/node server.js
+Restart=always
+RestartSec=10
+
+# Logging
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=vless-proxy
+
+# Security settings
+NoNewPrivileges=true
+PrivateTmp=true
+
+# Environment
+Environment=NODE_ENV=production
+
+# Resource limits
+LimitNOFILE=65536
+
+[Install]
+WantedBy=multi-user.target
